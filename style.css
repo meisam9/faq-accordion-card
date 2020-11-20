@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.main{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    background: rgb(175,103,233);
+    background: linear-gradient(0deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%) no-repeat;
+    display: flex;    
+    flex-direction: column;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff url('./images/bg-pattern-desktop.svg') no-repeat ;
+    background-size: 55%;
+    background-position-x: -10em  ;
+    padding: 5rem;
+    border-radius: .5rem;
+    display: flex;
+    overflow: hidden;
+
+    
+}
+
+.icons-side{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 2rem;
+    
+}
+
+.box-icon{
+    width: 12rem;
+    height: 11.5rem;
+    background: url('./images/illustration-box-desktop.svg');
+    z-index: 2;
+    position: absolute;
+    top: 20rem;
+    left: 2rem;
+}
+
+.girl-icon{
+    width:29.5rem;
+    height: 22.5rem;
+    background: url('./images/illustration-woman-online-desktop.svg');
+    margin-left: -10rem;
+}
+
+/* Questions Side */
+
+
+.faq-title h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.question{
+    color:hsl(237, 12%, 33%);
+    font-size: .8rem;
+    padding: .6rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+.question:hover p{
+    color:hsl(14, 88%, 65%) ;
+}
+.arrow{
+    width: 10px;
+    height: 7px;
+    background: url('./images/icon-arrow-down.svg');
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+.answer{
+    color:  hsl(240, 6%, 50%);
+    font-weight: 400;
+    border-top: 1px solid #ccc;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    line-height: 1.5;
+}
+
+.answer p{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show{
+    height: auto;
+    border-top: 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.show p{
+    opacity: 1;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+
+.bold{
+    font-weight: 700;
+    color: #000;
+}
+
+@media(max-width:900px){
+    .main{
+        background: rgb(101,101,231);
+        background: linear-gradient(0deg, rgba(101,101,231,1) 0%, rgba(175,103,233,1) 100%);
+
+
+    }
+    .container{
+        flex-direction: column;
+        overflow: auto;
+        background:#fff url('./images/bg-pattern-mobile.svg') no-repeat;
+        background-size: 65%;
+        background-position: 3rem 1.5rem;
+        width: 80%;
+        padding: 2rem;
+        /* padding-top: 10rem; */
+        /* margin-top: 5rem; */
+
+    }
+    .icons-side{
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .girl-icon{ 
+        background: url('./images/illustration-woman-online-mobile.svg') no-repeat;
+        position: absolute;
+        margin-top: -5rem;
+        /* margin-left: -12rem; */ 
+        width: 266px;
+        height: 196px;
+    }
+    .box-icon{
+        background: none;
+        width: 0;
+        height: 0;
+    }
+    .faq-side{
+        padding-top: 4rem ;
+    }
+    .faq-title{
+        text-align: center;
+        
+    }
+    .faq-title h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .answer{
+        line-height: 1.3;
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        width: 90%;
+        padding: 1rem;
+    }
+    .icons-side{
+        justify-content: center;
+        align-items: center;
+    }
+    .box-icon{
+        width: 0;
+        height: 0;
+    }
+    .girl-icon{
+        text-align: center;
+        justify-content: center;
+        margin:auto;
+        margin-top: -5rem;
+
+    }
+    .faq-side{
+        width: 100%;
+    }
+    .answer{
+        line-height: 1.2;
+    }
+}
