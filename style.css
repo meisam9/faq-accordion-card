@@ -24,8 +24,8 @@ body{
     justify-content: space-between;
     align-items: center;
     background: #fff url('./images/bg-pattern-desktop.svg') no-repeat ;
-    background-size: 55%;
-    background-position-x: -10em  ;
+    background-size: 60%;
+    background-position: -12rem -4.5rem;
     padding: 5rem;
     border-radius: .5rem;
     display: flex;
@@ -97,13 +97,13 @@ body{
     border-top: 1px solid #ccc;
     height: 0;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.25s ease-in-out;
     line-height: 1.5;
 }
 
 .answer p{
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
 }
 
 .show{
@@ -136,8 +136,8 @@ body{
         flex-direction: column;
         overflow: auto;
         background:#fff url('./images/bg-pattern-mobile.svg') no-repeat;
-        background-size: 65%;
-        background-position: 3rem 1.5rem;
+        background-size: 60%;
+        background-position: 4rem -1.2rem;
         width: 80%;
         padding: 2rem;
         /* padding-top: 10rem; */
@@ -151,7 +151,7 @@ body{
     .girl-icon{ 
         background: url('./images/illustration-woman-online-mobile.svg') no-repeat;
         position: absolute;
-        margin-top: -5rem;
+        margin-top: -3.5rem;
         /* margin-left: -12rem; */ 
         width: 266px;
         height: 196px;
@@ -181,6 +181,7 @@ body{
     .container{
         width: 90%;
         padding: 1rem;
+        background-position: 4rem -1rem;
     }
     .icons-side{
         justify-content: center;
